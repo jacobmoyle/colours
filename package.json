@@ -1,16 +1,18 @@
 {
-  "name": "colors",
+  "name": "nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "next": "9.1.4",
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "@material-ui/core": "latest",
+    "clsx": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
