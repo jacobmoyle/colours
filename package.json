@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "cypress:open": "cypress open",
     "dev": "next dev",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@material-ui/core": "latest",
@@ -14,5 +15,8 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "cypress": "^3.6.1"
   }
 }
