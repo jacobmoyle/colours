@@ -17,6 +17,20 @@
     "react-dom": "latest"
   },
   "devDependencies": {
-    "cypress": "^3.6.1"
+    "cypress": "^3.6.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
